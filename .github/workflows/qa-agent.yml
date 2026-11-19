@@ -1,0 +1,5 @@
+- name: Execute the QA ticket
+  run: node scripts/run-gemini-qa-agent.mjs
+  env:
+    GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+    GEMINI_MODEL: gemini-3.1-flash-lite
